@@ -7,6 +7,6 @@ class HealthControllerTests {
 
     @Test
     fun testResponseIsHealthyOrOk() {
-        assertTrue(HealthController().getHealthz().let { it == "Ok" || it == "Not healthy" }, "response must be 'Ok' or 'Healthy'")
+        assertTrue(HealthController().getHealthz().let { it == "Ok" || it == "Healthy" }, "response must be 'Ok' or 'Healthy'")
     }
 }
